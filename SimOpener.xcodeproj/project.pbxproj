@@ -20,6 +20,10 @@
 		3BCAFAC1153EE5500048640E /* KMSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAC0153EE5500048640E /* KMSimulator.m */; };
 		3BCAFAC4153EE7AF0048640E /* KMSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAC3153EE7AF0048640E /* KMSimulatorTests.m */; };
 		3BCAFAC5153EE7B60048640E /* KMSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAC0153EE5500048640E /* KMSimulator.m */; };
+		3BCAFACC153EF3310048640E /* NSBundle+iOSAppKvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFACB153EF3310048640E /* NSBundle+iOSAppKvc.m */; };
+		3BCAFACD153EF3310048640E /* NSBundle+iOSAppKvc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFACB153EF3310048640E /* NSBundle+iOSAppKvc.m */; };
+		3BCAFAD0153EFBBF0048640E /* KMDocumentsDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFACF153EFBBF0048640E /* KMDocumentsDrop.m */; };
+		3BCAFAD1153EFBBF0048640E /* KMDocumentsDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFACF153EFBBF0048640E /* KMDocumentsDrop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		3BCAFAC0153EE5500048640E /* KMSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSimulator.m; sourceTree = "<group>"; };
 		3BCAFAC2153EE7AF0048640E /* KMSimulatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSimulatorTests.h; sourceTree = "<group>"; };
 		3BCAFAC3153EE7AF0048640E /* KMSimulatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSimulatorTests.m; sourceTree = "<group>"; };
+		3BCAFACA153EF3310048640E /* NSBundle+iOSAppKvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+iOSAppKvc.h"; sourceTree = "<group>"; };
+		3BCAFACB153EF3310048640E /* NSBundle+iOSAppKvc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+iOSAppKvc.m"; sourceTree = "<group>"; };
+		3BCAFACE153EFBBF0048640E /* KMDocumentsDrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDocumentsDrop.h; sourceTree = "<group>"; };
+		3BCAFACF153EFBBF0048640E /* KMDocumentsDrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDocumentsDrop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,10 @@
 				3BCAFAC0153EE5500048640E /* KMSimulator.m */,
 				3BCAFAA0153EE4550048640E /* MainMenu.xib */,
 				3BCAFA92153EE4550048640E /* Supporting Files */,
+				3BCAFACA153EF3310048640E /* NSBundle+iOSAppKvc.h */,
+				3BCAFACB153EF3310048640E /* NSBundle+iOSAppKvc.m */,
+				3BCAFACE153EFBBF0048640E /* KMDocumentsDrop.h */,
+				3BCAFACF153EFBBF0048640E /* KMDocumentsDrop.m */,
 			);
 			path = SimOpener;
 			sourceTree = "<group>";
@@ -276,6 +288,8 @@
 				3BCAFA98153EE4550048640E /* main.m in Sources */,
 				3BCAFA9F153EE4550048640E /* KMAppDelegate.m in Sources */,
 				3BCAFAC1153EE5500048640E /* KMSimulator.m in Sources */,
+				3BCAFACC153EF3310048640E /* NSBundle+iOSAppKvc.m in Sources */,
+				3BCAFAD0153EFBBF0048640E /* KMDocumentsDrop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +300,8 @@
 				3BCAFAB6153EE4550048640E /* SimOpenerTests.m in Sources */,
 				3BCAFAC4153EE7AF0048640E /* KMSimulatorTests.m in Sources */,
 				3BCAFAC5153EE7B60048640E /* KMSimulator.m in Sources */,
+				3BCAFACD153EF3310048640E /* NSBundle+iOSAppKvc.m in Sources */,
+				3BCAFAD1153EFBBF0048640E /* KMDocumentsDrop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,13 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#define SimBasePath @"~/Library/Application Support/iPhone Simulator"
-@interface KMSimulator : NSObject
+#import "KMDocumentsDrop.h"
 
+#define SimBasePath @"~/Library/Application Support/iPhone Simulator"
+
+@interface KMSimulator : NSObject<DocumentsDropDelegate>
 
 @property (strong) NSString *basePath;
-@property (strong) NSString *simVersion;
-@property (readonly) NSArray *appBundles;
+@property (strong) IBOutlet NSString *simVersion;
+@property (readonly) IBOutlet NSArray *appBundles;
+@property (assign) IBOutlet NSArrayController *arrayController;
+@property (strong) id currentSelection;
+- (IBAction)clickedTable:(id)sender;
 
-
+- (IBAction)openSelectedDocumentsPath:(id)sender;
+- (IBAction)openSelected:(id)sender;
 @end

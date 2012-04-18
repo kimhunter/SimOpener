@@ -12,6 +12,7 @@
 @interface KMSimulator ()
 {
     NSMutableArray *appBundles;
+
 }
 - (NSString *)selectedSimVersion;
 - (NSString *)latestVersion;
@@ -21,9 +22,11 @@
 
 
 @implementation KMSimulator
+@synthesize currentSelection;
 @synthesize basePath, simVersion;
 @synthesize appBundles;
 @synthesize fileMan;
+@synthesize arrayController;
 
 - (id)init
 {
@@ -70,8 +73,8 @@
 - (NSString *)selectedSimVersion
 {
     return [self latestVersion];
-    
 }
+
 
 - (NSString *)latestVersion
 {
@@ -95,6 +98,44 @@
         result = [array lastObject];
     
     return result;
+}
+
+- (IBAction)clickedTable:(id)sender {
+//    NSTabView *tableView = sender;
+//    NSBundle *selectedBundle = [[arrayController selectedObjects] lastObject];
+//    NSString *path = [[selectedBundle bundlePath] stringByDeletingLastPathComponent];
+//    NSLog(@"%@", path);
+//    [[NSWorkspace sharedWorkspace] openFile:path withApplication:@"Finder"];
+
+}
+- (NSBundle *)selectedBundle
+{
+    return [[arrayController selectedObjects] lastObject];
+}
+
+- (IBAction)openSelectedDocumentsPath:(id)sender
+{
+    NSString *path = [[[self selectedBundle] bundlePath] stringByDeletingLastPathComponent];
+    NSLog(@"%@", path);
+    [[NSWorkspace sharedWorkspace] openFile:[path stringByAppendingPathComponent:@"Documents"] withApplication:@"Finder"];
+}
+
+
+- (IBAction)openSelected:(id)sender
+{
+    NSString *path = [[[self selectedBundle] bundlePath] stringByDeletingLastPathComponent];
+    NSLog(@"%@", path);
+    [[NSWorkspace sharedWorkspace] openFile:path withApplication:@"Finder"];
+}
+
+- (void)didDropFileUrl:(NSURL *)fileUrl
+{
+    NSURL *url = [[[[self selectedBundle] bundleURL] URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"Documents" isDirectory:YES];;
+    NSError *copyError = nil;
+    url = [url URLByAppendingPathComponent:[fileUrl lastPathComponent]];
+    NSLog(@"%@", url);
+    [fileMan copyItemAtURL:fileUrl toURL:url error:&copyError];
+    if (copyError) NSLog(@"%@", copyError);
 }
 
 @end
