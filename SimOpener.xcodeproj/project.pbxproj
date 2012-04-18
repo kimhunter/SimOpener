@@ -17,6 +17,9 @@
 		3BCAFAAB153EE4550048640E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCAFA8B153EE4550048640E /* Cocoa.framework */; };
 		3BCAFAB3153EE4550048640E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BCAFAB1153EE4550048640E /* InfoPlist.strings */; };
 		3BCAFAB6153EE4550048640E /* SimOpenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAB5153EE4550048640E /* SimOpenerTests.m */; };
+		3BCAFAC1153EE5500048640E /* KMSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAC0153EE5500048640E /* KMSimulator.m */; };
+		3BCAFAC4153EE7AF0048640E /* KMSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAC3153EE7AF0048640E /* KMSimulatorTests.m */; };
+		3BCAFAC5153EE7B60048640E /* KMSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCAFAC0153EE5500048640E /* KMSimulator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		3BCAFAB2153EE4550048640E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BCAFAB4153EE4550048640E /* SimOpenerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimOpenerTests.h; sourceTree = "<group>"; };
 		3BCAFAB5153EE4550048640E /* SimOpenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimOpenerTests.m; sourceTree = "<group>"; };
+		3BCAFABF153EE5500048640E /* KMSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSimulator.h; sourceTree = "<group>"; };
+		3BCAFAC0153EE5500048640E /* KMSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSimulator.m; sourceTree = "<group>"; };
+		3BCAFAC2153EE7AF0048640E /* KMSimulatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMSimulatorTests.h; sourceTree = "<group>"; };
+		3BCAFAC3153EE7AF0048640E /* KMSimulatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMSimulatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +123,8 @@
 			children = (
 				3BCAFA9D153EE4550048640E /* KMAppDelegate.h */,
 				3BCAFA9E153EE4550048640E /* KMAppDelegate.m */,
+				3BCAFABF153EE5500048640E /* KMSimulator.h */,
+				3BCAFAC0153EE5500048640E /* KMSimulator.m */,
 				3BCAFAA0153EE4550048640E /* MainMenu.xib */,
 				3BCAFA92153EE4550048640E /* Supporting Files */,
 			);
@@ -140,6 +149,8 @@
 				3BCAFAB4153EE4550048640E /* SimOpenerTests.h */,
 				3BCAFAB5153EE4550048640E /* SimOpenerTests.m */,
 				3BCAFAAF153EE4550048640E /* Supporting Files */,
+				3BCAFAC2153EE7AF0048640E /* KMSimulatorTests.h */,
+				3BCAFAC3153EE7AF0048640E /* KMSimulatorTests.m */,
 			);
 			path = SimOpenerTests;
 			sourceTree = "<group>";
@@ -264,6 +275,7 @@
 			files = (
 				3BCAFA98153EE4550048640E /* main.m in Sources */,
 				3BCAFA9F153EE4550048640E /* KMAppDelegate.m in Sources */,
+				3BCAFAC1153EE5500048640E /* KMSimulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BCAFAB6153EE4550048640E /* SimOpenerTests.m in Sources */,
+				3BCAFAC4153EE7AF0048640E /* KMSimulatorTests.m in Sources */,
+				3BCAFAC5153EE7B60048640E /* KMSimulator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +383,7 @@
 		3BCAFABA153EE4550048640E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimOpener/SimOpener-Prefix.pch";
 				INFOPLIST_FILE = "SimOpener/SimOpener-Info.plist";
@@ -380,6 +395,7 @@
 		3BCAFABB153EE4550048640E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimOpener/SimOpener-Prefix.pch";
 				INFOPLIST_FILE = "SimOpener/SimOpener-Info.plist";
@@ -392,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimOpener.app/Contents/MacOS/SimOpener";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimOpener/SimOpener-Prefix.pch";
@@ -406,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimOpener.app/Contents/MacOS/SimOpener";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimOpener/SimOpener-Prefix.pch";
