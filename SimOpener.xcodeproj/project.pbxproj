@@ -35,19 +35,19 @@
 		3BCAFA8E153EE4550048640E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3BCAFA8F153EE4550048640E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3BCAFA90153EE4550048640E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3BCAFA93153EE4550048640E /* SimOpener-Info.plist */ = {isa = PBXFileReference; path = "SimOpener-Info.plist"; sourceTree = "<group>"; };
+		3BCAFA93153EE4550048640E /* SimOpener-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimOpener-Info.plist"; sourceTree = "<group>"; };
 		3BCAFA95153EE4550048640E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3BCAFA97153EE4550048640E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3BCAFA99153EE4550048640E /* SimOpener-Prefix.pch */ = {isa = PBXFileReference; path = "SimOpener-Prefix.pch"; sourceTree = "<group>"; };
+		3BCAFA99153EE4550048640E /* SimOpener-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimOpener-Prefix.pch"; sourceTree = "<group>"; };
 		3BCAFA9B153EE4550048640E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		3BCAFA9D153EE4550048640E /* KMAppDelegate.h */ = {isa = PBXFileReference; path = KMAppDelegate.h; sourceTree = "<group>"; };
+		3BCAFA9D153EE4550048640E /* KMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMAppDelegate.h; sourceTree = "<group>"; };
 		3BCAFA9E153EE4550048640E /* KMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMAppDelegate.m; sourceTree = "<group>"; };
 		3BCAFAA1153EE4550048640E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3BCAFAA8153EE4550048640E /* SimOpenerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimOpenerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCAFAA9153EE4550048640E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3BCAFAB0153EE4550048640E /* SimOpenerTests-Info.plist */ = {isa = PBXFileReference; path = "SimOpenerTests-Info.plist"; sourceTree = "<group>"; };
+		3BCAFAB0153EE4550048640E /* SimOpenerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimOpenerTests-Info.plist"; sourceTree = "<group>"; };
 		3BCAFAB2153EE4550048640E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3BCAFAB4153EE4550048640E /* SimOpenerTests.h */ = {isa = PBXFileReference; path = SimOpenerTests.h; sourceTree = "<group>"; };
+		3BCAFAB4153EE4550048640E /* SimOpenerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimOpenerTests.h; sourceTree = "<group>"; };
 		3BCAFAB5153EE4550048640E /* SimOpenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimOpenerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
